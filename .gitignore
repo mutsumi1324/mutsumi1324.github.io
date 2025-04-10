@@ -1,0 +1,7 @@
+*.log          # すべての .log ファイル
+tmp/           # tmp フォルダ全体
+*.swp          # Vimの一時ファイル
+.DS_Store      # macOSの不要ファイル
+node_modules/  # npmパッケージ（容量大）
+.env      
+*~
