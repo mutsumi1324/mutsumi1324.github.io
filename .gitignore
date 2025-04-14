@@ -5,3 +5,5 @@ tmp/           # tmp フォルダ全体
 node_modules/  # npmパッケージ（容量大）
 .env      
 *~
+_site
+.jekyll-cache
