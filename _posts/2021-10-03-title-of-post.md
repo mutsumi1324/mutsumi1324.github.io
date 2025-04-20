@@ -1,6 +1,7 @@
 ---
 layout: post
 title: This is the title of the post
+description: A dangerous site deservers a dangerous blog.
 postHero: /images/shark.jpg
 author: Me, Myself, and I
 authorTwitter: https://twitter.com/mhartl
