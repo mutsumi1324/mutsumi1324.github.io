@@ -9,11 +9,15 @@ function activateGallery() {
     let description = document.querySelector("#gallery-info .description");
 
     thumbnails.forEach(function(thumbnail) {
-        thumbnail.addEventListener("click", function() {
-            // クリックされたサムネイル画像をメイン画像として設定する
+        // 大画像をプリロードする
             let newImageSrc   = thumbnail.dataset.largeVersion
             let newImageTitle = thumbnail.dataset.title
+            let largeVersion  = new Image();
+            largeVersion.src  = thumbnail.dataset.largeVersion
 
+        thumbnail.addEventListener("click", function() {
+            
+            // クリックされたサムネイル画像をメイン画像として設定する
             mainImage.setAttribute("src", newImageSrc);
             mainImage.setAttribute("alt", newImageTitle);
 
